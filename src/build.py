@@ -7,7 +7,7 @@ GBY = {g[0]: g for g in GROUPS}
 CBY = {c["slug"]: c for c in CASES}
 
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">'
-NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About"), ("dungeon-crawler-fitness.html", "Building"), ("contact.html", "Contact")]
+NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About"), ("dungeon-crawler-fitness.html", "Building"), ("files/Keith_Rollins_Resume.pdf", "Resume"), ("contact.html", "Contact")]
 
 def e(s): return html.escape(s, quote=True)
 
@@ -84,7 +84,7 @@ home = f"""
 <span class="eyebrow">Keith Rollins</span>
 <h1 style="margin-top:14px">Marketing strategist and <em>communications leader.</em></h1>
 <p class="lede">I build marketing programs people trust, then prove they work. For three years I've led communications at APMEX across email, social, PR, content and paid media, for an audience that doesn't buy hype.</p>
-<div class="btns"><a class="btn primary" href="work.html">Explore the work</a><a class="btn" href="about.html">About me</a></div>
+<div class="btns"><a class="btn primary" href="work.html">Explore the work</a><a class="btn" href="files/Keith_Rollins_Resume.pdf">Download resume (PDF)</a><a class="textlink" href="about.html">About me →</a></div>
 </div>
 <aside class="idcard" aria-label="At a glance">
 <span class="eyebrow">At a glance</span>
@@ -306,7 +306,7 @@ contact = f"""
 <dl>
 <dt>Email</dt><dd><span class="addr" style="color:var(--ink)">{EMAIL}</span></dd>
 <dt>Location</dt><dd>Edmond, OK</dd>
-<dt>Resume</dt><dd>Available on request</dd>
+<dt>Resume</dt><dd><a href="files/Keith_Rollins_Resume.pdf">Download PDF</a></dd>
 </dl>
 <div class="btns"><button class="btn primary" type="button" data-copy="{EMAIL}">Copy email address</button><span class="toast" aria-live="polite"></span></div>
 </div>
@@ -350,6 +350,7 @@ page("how-i-built-this-site.html", "How I Built This Site | Keith Rollins", "How
 HERE = os.path.dirname(os.path.abspath(__file__))
 shutil.copytree(os.path.join(HERE, "assets"), os.path.join(OUT, "assets"), dirs_exist_ok=True)
 shutil.copytree(os.path.join(HERE, "emails"), os.path.join(OUT, "emails"), dirs_exist_ok=True)
+shutil.copytree(os.path.join(HERE, "files"), os.path.join(OUT, "files"), dirs_exist_ok=True)
 open(os.path.join(OUT, "CNAME"), "w").write("keithrrollins.com\n")
 open(os.path.join(OUT, ".nojekyll"), "w").write("")
 print("built", len(CASES) + 6, "pages")

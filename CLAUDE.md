@@ -17,8 +17,8 @@ Keith Rollins' portfolio site. A living project: it grows as Keith does new work
 3. **The home page is about Keith first:** who he is, then his numbers, then the work. Assume a visitor spends one to two minutes.
 4. **Positioning:** marketing strategist and communications leader. Resume title: Email & Marketing Communications Lead. Target roles: email and lifecycle marketing leadership, remote or Oklahoma City. Target industries: fitness, finance, supplements, e-commerce.
 5. **APMEX has cleared** naming APMEX, OneGold, Bullion International Group and these projects publicly.
-6. **Not live yet.** Keep GitHub Pages off until Keith approves his resume. No LinkedIn link until he says his profile is updated.
-7. **Keep personal contact details out of this public repo** beyond the email address already on the site. The resume (with phone number) stays out of the repo until Keith decides.
+6. **Live.** Resume approved Oct 12, 2026; the site is published on GitHub Pages at keithrrollins.com. No LinkedIn link until Keith says his profile is updated.
+7. **Keep personal contact details out of this public repo** beyond the email address already on the site. The public resume PDF (`src/files/Keith_Rollins_Resume.pdf`) omits the phone number on purpose; Keith's application copy includes it.
 
 ## Known facts (verified)
 
@@ -35,4 +35,3 @@ Keith Rollins' portfolio site. A living project: it grows as Keith does new work
 - HotCars and Copywriting.org links.
 - Confirm Bullion Card series year (2023 taken from the email footer).
 - Dungeon Crawler Fitness: update its progress checklist and add real email metrics as they arrive.
-- Resume PDF download link once approved.

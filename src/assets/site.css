@@ -197,3 +197,12 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .toast{font-size:13px;color:var(--good);min-height:1em}
 .site-foot nav ul{display:flex;flex-wrap:wrap;gap:6px 18px;list-style:none;margin:0;padding:0;font-size:14px}
 .site-foot nav a{color:var(--muted)}
+
+/* coming-soon holding page */
+.hold{min-height:100vh;display:grid;align-items:center;padding-block:48px}
+.hold h1{font-size:clamp(44px,8vw,96px);font-weight:800;letter-spacing:-.035em;line-height:1;margin-top:16px}
+.hold-title{font:700 clamp(22px,3.4vw,36px)/1.15 var(--display);letter-spacing:-.015em;margin-top:14px}
+.hold-title em{font-style:normal;color:var(--accent)}
+.hold .lede{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:56ch;margin-top:18px}
+.hold-card{max-width:560px}
+.hold-body{padding:20px 22px;display:grid;gap:14px}

@@ -6,6 +6,7 @@ What was built, what was decided and why. Newest entries at the top of the log; 
 
 | Date | What happened |
 |---|---|
+| 2026-10-12 | **Site put on hold** for Keith to fact-check. Added `LIVE` switch in `src/content.py`; keithrrollins.com now shows a coming-soon page (noindex, email copy button). Free GitHub Pages can't be made private, so this replaces the full site until launch. |
 | 2026-10-12 | Resume source moved into the repo (`src/resume/resume.html`) with `src/build_resume.py`. Public PDF omits phone (anti-scraping); application copy with phone builds to git-ignored `private/`. Added this file and the update playbook in CLAUDE.md. |
 | 2026-10-12 | **Site went live.** GitHub Pages from `main` → `/docs`, custom domain keithrrollins.com. GoDaddy DNS: A `@` → 185.199.108.153/109/110/111 (was 160.153.0.142); CNAME `www` → krollin2408-dev.github.io (was keithrrollins.com). iCloud mail records (MX, SPF TXT, `sig1._domainkey` CNAME) and `pay` CNAME left untouched. Domain forwarding was already off. HTTPS certificate pending; enable "Enforce HTTPS" in Settings → Pages once available. |
 | 2026-10-12 | Resume approved. One page, organized by areas of responsibility (not a few projects). Certifications and high school removed by choice. |

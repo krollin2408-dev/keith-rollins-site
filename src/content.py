@@ -1,4 +1,6 @@
 # Site content. Every claim here traces to Keith's kit, his ledger answers, or public pages he wrote.
+# Set LIVE = True to publish the full site to keithrrollins.com. False shows a coming-soon page.
+LIVE = False
 EMAIL = "keithrrollins@gmail.com"
 SITE = "https://keithrrollins.com"
 

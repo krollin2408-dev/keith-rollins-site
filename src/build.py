@@ -2,7 +2,11 @@ import json, os, shutil, sys, html
 sys.path.insert(0, os.path.dirname(__file__))
 from content import *
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs")
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+DOCS = os.path.join(ROOT, "docs")
+# LIVE (in content.py) decides what keithrrollins.com shows. While False, the full site
+# builds to preview/ (git-ignored, for fact-checking) and docs/ holds a "coming soon" page.
+OUT = sys.argv[1] if len(sys.argv) > 1 else (DOCS if LIVE else os.path.join(ROOT, "preview"))
 GBY = {g[0]: g for g in GROUPS}
 CBY = {c["slug"]: c for c in CASES}
 
@@ -353,4 +357,45 @@ shutil.copytree(os.path.join(HERE, "emails"), os.path.join(OUT, "emails"), dirs_
 shutil.copytree(os.path.join(HERE, "files"), os.path.join(OUT, "files"), dirs_exist_ok=True)
 open(os.path.join(OUT, "CNAME"), "w").write("keithrrollins.com\n")
 open(os.path.join(OUT, ".nojekyll"), "w").write("")
-print("built", len(CASES) + 6, "pages")
+print("built", len(CASES) + 6, "pages into", os.path.relpath(OUT, ROOT))
+
+if not LIVE and len(sys.argv) == 1:
+    shutil.rmtree(DOCS, ignore_errors=True)
+    os.makedirs(DOCS)
+    shutil.copytree(os.path.join(HERE, "assets"), os.path.join(DOCS, "assets"))
+    hold = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keith Rollins | Marketing Strategist and Communications Leader</title>
+<meta name="description" content="Keith Rollins, marketing strategist and communications leader. Full portfolio coming soon.">
+<meta name="robots" content="noindex">
+{FONTS}
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<main id="main" class="hold">
+<div class="wrap">
+<span class="eyebrow">keithrrollins.com</span>
+<h1>Keith Rollins</h1>
+<p class="hold-title">Marketing strategist and <em>communications leader.</em></p>
+<p class="lede">I lead marketing communications at APMEX across strategy, email, social, PR, content and paid media. My full portfolio is getting a final check and will be here soon.</p>
+<div class="readout hold-card">
+<div class="readout-head"><span>Diagnostic report · K. Rollins</span><span>Status: final inspection</span></div>
+<div class="hold-body">
+<span class="addr">{EMAIL}</span>
+<div class="btns"><button class="btn primary" type="button" data-copy="{EMAIL}">Copy email address</button><span class="toast" aria-live="polite"></span></div>
+</div>
+</div>
+</div>
+</main>
+<script src="assets/site.js"></script>
+</body>
+</html>
+"""
+    open(os.path.join(DOCS, "index.html"), "w").write(hold)
+    open(os.path.join(DOCS, "404.html"), "w").write(hold)
+    open(os.path.join(DOCS, "CNAME"), "w").write("keithrrollins.com\n")
+    open(os.path.join(DOCS, ".nojekyll"), "w").write("")
+    print("docs/ now holds the coming-soon page (LIVE = False)")

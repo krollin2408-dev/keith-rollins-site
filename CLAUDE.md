@@ -21,7 +21,7 @@ Keith asks for changes in plain English. Do the work end to end, then tell him w
 - **New project:** add a dict to `CASES` in `src/content.py` with Keith's exact role, sources for every number, and the right `group`.
 - **Design:** change `src/assets/site.css`; keep both light and dark themes working and check phone width (~390px).
 - **After any change:** add a line to the log in `PROJECT_HISTORY.md`.
-- Publishing is automatic: a push to `main` updates keithrrollins.com in about two minutes.
+- Publishing is automatic: a push to `main` updates keithrrollins.com in about two minutes. While `LIVE = False`, review changes in `preview/` (or a private preview) instead; the public domain shows only the coming-soon page.
 - PDF builds need Playwright (`pip install playwright && python3 -m playwright install chromium`); fonts for the resume are in `src/resume/fonts/`.
 
 ## Content rules (set by Keith; do not break these)
@@ -31,7 +31,7 @@ Keith asks for changes in plain English. Do the work end to end, then tell him w
 3. **The home page is about Keith first:** who he is, then his numbers, then the work. Assume a visitor spends one to two minutes.
 4. **Positioning:** marketing strategist and communications leader. Resume title: Email & Marketing Communications Lead. Target roles: email and lifecycle marketing leadership, remote or Oklahoma City. Target industries: fitness, finance, supplements, e-commerce.
 5. **APMEX has cleared** naming APMEX, OneGold, Bullion International Group and these projects publicly.
-6. **Live.** Resume approved Oct 12, 2026; the site is published on GitHub Pages at keithrrollins.com. No LinkedIn link until Keith says his profile is updated.
+6. **On hold for fact-checking (since Oct 12, 2026).** `LIVE = False` in `src/content.py`: keithrrollins.com shows a coming-soon page and the full site builds to git-ignored `preview/`. When Keith says to launch, set `LIVE = True`, rebuild, push. No LinkedIn link until Keith says his profile is updated.
 7. **Keep personal contact details out of this public repo** beyond the email address already on the site. The public resume PDF (`src/files/Keith_Rollins_Resume.pdf`) omits the phone number on purpose to avoid scam calls; the application copy with phone builds to `private/` and is never committed.
 
 ## Known facts (verified)

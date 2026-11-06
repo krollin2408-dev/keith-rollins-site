@@ -25,27 +25,26 @@ QUOTE = ("Diagnosing a car and diagnosing a campaign work the same way.",
 
 # The full story page. Each section: (label, heading, paragraphs). Plain first person.
 STORY = [
-    ("Right now", "A big, mixed job, and I love it", [
+    ("Right now", "Marketing Communications Lead", [
         "I'm the Marketing Communications Lead for Bullion International Group, based in Oklahoma City. B.I.G. is the company behind APMEX, one of the largest online precious metals retailers in the U.S., OneGold and several other brands, and I lead communications channels across them. In a single week I might write a press release, plan a campaign, dig through email numbers, steer social media for several brands, and build a tool with AI that saves my team time every morning.",
-        "Precious metals buyers are some of the most skeptical customers there are. They've seen every hype cycle. Writing for them taught me to keep things plain, specific and honest, and to let the facts do the selling.",
+        "Precious metals buyers are some of the most skeptical customers there are. They've seen every hype cycle. Writing for them taught me to keep things plain, specific and honest.",
         "Of everything I do, email is where I get the most out of the work: one message, one reader, one clear reason to act. That's where I want to spend my next chapter.",
     ]),
-    ("Chapter one · 2011 – 2019", "The shop", [
-        "For eight years I managed Downtown 66, an auto repair shop in Stillwater. In a small shop, the manager runs all of it, and I did. I sold the work and handled customer service. I kept the books and the schedule. I hired, trained and led a crew of five to eight people. If the shop needed it to stay open, it was my job.",
+    ("2011 – 2019", "The shop", [
+        "For eight years I managed Downtown 66, an auto repair shop in Stillwater, Oklahoma. In a small shop, the manager runs all of it, and I did. I sold the work and handled customer service. I kept the books and the schedule. I hired, trained and led a crew of five to eight people. If the shop needed it to stay open, it was my job.",
         "Most people walked into the shop expecting to get taken. You don't win those people over with a pitch. You win them by explaining the problem in plain words, fixing what's actually broken and standing behind the work. Sales, service, operations and marketing, all in one job. I just didn't call it marketing yet.",
     ]),
-    ("Chapter two · 2020 – 2023", "Home", [
+    ("2020 – 2023", "Home", [
         "In 2020 I stepped away to stay home with my kids. It's the most important job I've ever had, and it taught me more than any other. It's where I learned to run my own schedule, my own pipeline and my own deadlines, with nobody checking in.",
         "It's also when I started freelancing as a copywriter: direct response, email, SEO and product copy, much of it for automotive brands. For FIXD I wrote 20 data-heavy guides to the best and worst years of popular cars. A decade of fixing cars, it turns out, makes you pretty good at telling people which ones to buy.",
     ]),
-    ("Chapter three · 2023 – now", "Bullion International Group", [
+    ("2023 – now", "Bullion International Group", [
         "In August 2023 I joined APMEX, the flagship brand of Bullion International Group, and that winter I was named Employee of the Quarter. The job has kept growing ever since, and today it reaches across B.I.G.'s family of brands.",
         "Today I lead social strategy for multiple B.I.G. brands. I chose Sprout Social and rolled it out across the company. I write and distribute our press releases, and I built the plan to bring the PR program to our sister brands. I run campaigns like APMEX Is the Spot, plan print and billboard buys, write email for programs like the Bullion Card, and report results to leadership every month. I've written 63 articles for the APMEX Knowledge Center along the way.",
-        "I've also become the person people come to about AI. I build tools with Claude that my team uses every day, and this website is one of them.",
+        "I've also become the person people come to about AI. I build tools with Claude that my team uses every day.",
     ]),
     ("Next", "Your team", [
-        "I want to lead email and lifecycle marketing for a brand that cares about getting it right. Fitness, finance, supplements and e-commerce are at the top of my list, remote or here in Oklahoma City.",
-        "I'm already practicing what I preach. I'm building the email program for Dungeon Crawler Fitness, a fitness game I designed, from zero and in public.",
+        "I want to lead email, SMS and lifecycle marketing for a brand that cares about getting it right. Fitness, finance, supplements and e-commerce are at the top of my list, remote or here in Oklahoma City.",
     ]),
 ]
 

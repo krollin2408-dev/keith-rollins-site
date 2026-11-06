@@ -121,7 +121,7 @@ story = "".join(f'<section class="chapter"><div><span class="label">{e(lab)}</sp
 storypage = f"""
 <div class="wrap">
 <header class="page-head"><span class="label">My story</span><h1 class="display h-xl">From the shop floor to the inbox.</h1>
-<p class="lede">It starts where I am today, then goes back to how I got here.</p></header>
+</header>
 <div class="story">{story}</div>
 <div class="btns" style="border-top:3px solid var(--rule);padding-top:32px"><a class="btn solid" href="work.html">See the work</a><a class="btn" href="resume.html">Read my resume</a></div>
 </div>
@@ -198,7 +198,7 @@ page("resume.html", "Resume | Keith Rollins", "Keith Rollins' resume: Email & Ma
 contact = f"""
 <div class="wrap">
 <header class="page-head"><span class="label">Let's talk</span><h1 class="display h-xl">Got a team that needs this?</h1>
-<p class="lede">I'm looking for a full-time role leading email and lifecycle marketing, remote or in the Oklahoma City area. Email is the fastest way to reach me.</p></header>
+<p class="lede">I'm looking for a full-time role leading email, SMS and lifecycle marketing, remote or in the Oklahoma City area. Email is the fastest way to reach me.</p></header>
 <div class="contact-card"><span class="label">Email</span><span class="addr">{EMAIL}</span>
 <div class="btns"><button class="btn solid" type="button" data-copy="{EMAIL}">Copy email address</button><span class="toast" aria-live="polite"></span></div>
 <span class="caption">Edmond, Oklahoma · <a href="resume.html">Resume</a></span></div>

@@ -142,7 +142,7 @@ workpage = f"""
 </section>
 </div>
 """
-page("work.html", "Work | Keith Rollins", "Print, email, campaigns, social video, PR and writing by Keith Rollins.", workpage, "work.html")
+page("work.html", "Work | Keith Rollins", "Print, email, campaigns, social video, PR, and writing by Keith Rollins.", workpage, "work.html")
 
 # ---------------- PROJECT PAGES
 SERIES = [("01-kickoff", "Kickoff", "60 days left. Announce the bonus."),
@@ -198,7 +198,7 @@ page("resume.html", "Resume | Keith Rollins", "Keith Rollins' resume: Email & Ma
 contact = f"""
 <div class="wrap">
 <header class="page-head"><span class="label">Let's talk</span><h1 class="display h-xl">Got a team that needs this?</h1>
-<p class="lede">I'm looking for a full-time role leading email, SMS and lifecycle marketing, remote or in the Oklahoma City area. Email is the fastest way to reach me.</p></header>
+<p class="lede">I'm looking for a full-time role leading email, SMS, and lifecycle marketing, remote or in the Oklahoma City area. Email is the fastest way to reach me.</p></header>
 <div class="contact-card"><span class="label">Email</span><span class="addr">{EMAIL}</span>
 <div class="btns"><button class="btn solid" type="button" data-copy="{EMAIL}">Copy email address</button><span class="toast" aria-live="polite"></span></div>
 <span class="caption">Edmond, Oklahoma · <a href="resume.html">Resume</a></span></div>
@@ -212,8 +212,8 @@ dcf = """
 <header class="page-head"><span class="label">What I'm building</span><h1 class="display h-xl">Dungeon Crawler Fitness</h1>
 <p class="lede">A fitness game I designed. It started as a board game and is now becoming an app. I'm building its email program from zero, in public. When there are real numbers, they'll be here.</p></header>
 <div class="project-body">
-<section><h2>The game</h2><div class="prose"><p>Players finish quest cards made of bodyweight exercises to earn XP and gold, fight floor bosses, keep streaks alive and level up a character across five skills. The design is locked, and a working prototype is being playtested.</p></div></section>
-<section><h2>The email plan</h2><div class="prose"><ol><li><b>Waitlist.</b> An honest sign-up page on Kit: no fake scarcity, no invented testimonials, no results claims.</li><li><b>Welcome series.</b> Introduce the game and learn what each subscriber wants.</li><li><b>Build log.</b> Regular updates so the list stays warm until launch.</li><li><b>Launch.</b> A paced sequence that turns the waitlist into first players.</li><li><b>Report.</b> List growth, opens, clicks and conversions, posted here.</li></ol></div></section>
+<section><h2>The game</h2><div class="prose"><p>Players finish quest cards made of bodyweight exercises to earn XP and gold, fight floor bosses, keep streaks alive, and level up a character across five skills. The design is locked, and a working prototype is being playtested.</p></div></section>
+<section><h2>The email plan</h2><div class="prose"><ol><li><b>Waitlist.</b> An honest sign-up page on Kit: no fake scarcity, no invented testimonials, no results claims.</li><li><b>Welcome series.</b> Introduce the game and learn what each subscriber wants.</li><li><b>Build log.</b> Regular updates so the list stays warm until launch.</li><li><b>Launch.</b> A paced sequence that turns the waitlist into first players.</li><li><b>Report.</b> List growth, opens, clicks, and conversions, posted here.</li></ol></div></section>
 <section><h2>Where it stands</h2><div class="prose"><p>Game designed. Prototype in playtesting. Waitlist page in progress.</p></div></section>
 </div>
 </div>
@@ -228,7 +228,7 @@ col = """
 <div class="project-body">
 <section><h2>What AI did</h2><div class="prose"><ul><li>Pulled my author pages and counted my published work: 63 APMEX articles and 20 FIXD guides.</li><li>Read public view counts to find which of my video ideas outperformed.</li><li>Drafted pages from my notes and wrote the code: plain HTML and one stylesheet, hosted free on GitHub Pages.</li></ul></div></section>
 <section><h2>What I did</h2><div class="prose"><ul><li>Set the rule that every project names my exact role, and that every number has a source.</li><li>Cut what wasn't mine, corrected what was off, and chose the design.</li><li>Approved every word before it went live.</li></ul></div></section>
-<section><h2>Why it matters</h2><div class="prose"><p>Using AI well isn't about typing prompts. It's knowing what to hand off, describing it clearly, checking the result and owning what ships. Anthropic calls that AI Fluency, and this site is a working example of it.</p></div></section>
+<section><h2>Why it matters</h2><div class="prose"><p>Using AI well isn't about typing prompts. It's knowing what to hand off, describing it clearly, checking the result, and owning what ships. Anthropic calls that AI Fluency, and this site is a working example of it.</p></div></section>
 </div>
 </div>
 """
@@ -240,7 +240,7 @@ for d in ("assets", "emails", "files", "images"):
 # Not-found page, sitemap and GitHub Pages files for the live site
 page("404.html", "Page Not Found | Keith Rollins", "That page doesn't exist.",
      '<div class="wrap"><header class="page-head"><span class="label">404</span><h1 class="display h-xl">Wrong bay.</h1>'
-     '<p class="lede">That page doesn\'t exist. Try the <a href="/">home page</a>, <a href="/story.html">my story</a> or <a href="/work.html">the work</a>.</p></header></div>')
+     '<p class="lede">That page doesn\'t exist. Try the <a href="/">home page</a>, <a href="/story.html">my story</a>, or <a href="/work.html">the work</a>.</p></header></div>')
 fix404 = open(os.path.join(OUT, "404.html")).read().replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<base href="/">', 1)
 open(os.path.join(OUT, "404.html"), "w").write(fix404)
 urls = ["", "story.html", "work.html", "resume.html", "contact.html", "dungeon-crawler-fitness.html", "how-i-built-this-site.html"] + [f"work/{w['slug']}.html" for w in WORK]

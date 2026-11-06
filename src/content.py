@@ -8,7 +8,7 @@ SITE = "https://keithrrollins.com"
 
 HERO = dict(
     label="Right now",
-    # Visible headline removed at Keith's request (Nov 6, 2026); the page keeps a screen-reader-only h1.
+    headline="I'm Keith. I make brands sound like people again.",
     lede="Today I lead marketing communications across the brands of Bullion International Group, including APMEX, one of the biggest precious metals retailers in the country. Ten years ago I was running a repair shop in Stillwater. Here's how I got from there to here, and what I can build for you.",
 )
 

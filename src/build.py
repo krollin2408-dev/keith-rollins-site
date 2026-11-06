@@ -86,7 +86,7 @@ home = f"""
 <section class="hero">
 <div class="hero-copy">
 <span class="label">{e(HERO['label'])}</span>
-<h1 class="sr-only">Keith Rollins, marketing strategist and communications leader</h1>
+<h1 class="display h-xl">{e(HERO['headline'])}</h1>
 <p class="lede">{e(HERO['lede'])}</p>
 <div class="btns"><a class="btn solid" href="story.html">Read my story</a><a class="btn" href="work.html">See the work</a></div>
 </div>

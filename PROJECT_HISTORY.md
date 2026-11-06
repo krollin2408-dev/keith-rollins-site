@@ -6,7 +6,7 @@ What was built, what was decided and why. Newest entries at the top of the log; 
 
 | Date | What happened |
 |---|---|
-| 2026-11-06 | Home page headline ("Hi, I'm Keith. I make brands sound like people again.") deleted at Keith's request; a screen-reader-only h1 keeps the page accessible and searchable. |
+| 2026-11-06 | Home page headline shortened to "I'm Keith. I make brands sound like people again." (Keith asked to drop "Hi,"). |
 | 2026-11-06 | At-spot campaign results clarified as social media link clicks (resume and site), per Keith's comment. |
 | 2026-11-06 | **Full site launched** on keithrrollins.com (`LIVE = True`). Added a custom 404 page, sitemap.xml and robots.txt; coming-soon page retired. |
 | 2026-11-06 | Role framed as Bullion International Group across its brands (site, story, resume, schema). Downtown 66 expanded to show Keith ran every side of the shop; Janzen Toyota removed everywhere. Resume margins trimmed to stay one page. |

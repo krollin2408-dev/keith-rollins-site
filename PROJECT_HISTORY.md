@@ -6,6 +6,7 @@ What was built, what was decided and why. Newest entries at the top of the log; 
 
 | Date | What happened |
 |---|---|
+| 2026-11-06 | **Redesign: "The Workshop."** Keith picked direction A's design with C's words from three mockups, plus the "diagnosing a car" quote. New My Story page (first person, starts with where he is now), Work cut to 9 featured pieces shown work-first plus an "Also on my plate" list, a readable Resume page, headshot and the Coinage ad added. Resume skills regrouped from Keith's skills list. Still behind the coming-soon page. Flagged: the Coinage ad shows 900.375.9006 instead of 800. |
 | 2026-11-05 | HTTPS live. Certificate issued after Keith signed in to GitHub; **Enforce HTTPS** turned on. https://keithrrollins.com loads cleanly (still the coming-soon page). |
 | 2026-10-12 | **Site put on hold** for Keith to fact-check. Added `LIVE` switch in `src/content.py`; keithrrollins.com now shows a coming-soon page (noindex, email copy button). Free GitHub Pages can't be made private, so this replaces the full site until launch. |
 | 2026-10-12 | Resume source moved into the repo (`src/resume/resume.html`) with `src/build_resume.py`. Public PDF omits phone (anti-scraping); application copy with phone builds to git-ignored `private/`. Added this file and the update playbook in CLAUDE.md. |

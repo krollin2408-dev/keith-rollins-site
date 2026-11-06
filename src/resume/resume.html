@@ -1,34 +1,35 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <!-- Resume source. Edit text here, then run: python3 src/build_resume.py --><title>Keith Rollins Resume</title>
 <style>
-@font-face{font-family:"Schibsted";src:url("fonts/schibsted-grotesk-latin-800-normal.woff2");font-weight:800}
-@font-face{font-family:"Schibsted";src:url("fonts/schibsted-grotesk-latin-700-normal.woff2");font-weight:700}
-@font-face{font-family:"Plex";src:url("fonts/ibm-plex-sans-latin-400-normal.woff2");font-weight:400}
-@font-face{font-family:"Plex";src:url("fonts/ibm-plex-sans-latin-400-italic.woff2");font-weight:400;font-style:italic}
-@font-face{font-family:"Plex";src:url("fonts/ibm-plex-sans-latin-600-normal.woff2");font-weight:600}
+/* Matches the resume page on keithrrollins.com ("The Workshop" design). */
+@font-face{font-family:"Archivo";src:url("fonts/archivo-latin-wdth-normal.woff2") format("woff2");font-weight:100 900;font-stretch:62% 125%}
+@font-face{font-family:"Source Serif";src:url("fonts/source-serif-4-latin-400-normal.woff2");font-weight:400}
+@font-face{font-family:"Source Serif";src:url("fonts/source-serif-4-latin-400-italic.woff2");font-weight:400;font-style:italic}
+@font-face{font-family:"Source Serif";src:url("fonts/source-serif-4-latin-600-normal.woff2");font-weight:600}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-mono-latin-500-normal.woff2");font-weight:500}
 @page{size:Letter;margin:0.42in 0.55in}
-:root{--ink:#12151B;--muted:#525A6B;--accent:#2346D6;--line:#D6DBE5}
+:root{--ink:#12151B;--muted:#4A4D50;--red:#B8322A;--line:#C9C6BE}
 *{box-sizing:border-box}
-body{margin:0;font:400 9.9pt/1.42 "Plex",Arial,sans-serif;color:var(--ink)}
+body{margin:0;font:400 9.5pt/1.38 "Source Serif",Georgia,serif;color:var(--ink)}
 header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-bottom:9px;border-bottom:2px solid var(--ink)}
-h1{font:800 27pt/1 "Schibsted",Arial,sans-serif;letter-spacing:-.02em;margin:0}
-.title{font:700 11.5pt/1.2 "Schibsted",Arial,sans-serif;color:var(--accent);margin-top:5px}
-.contact{text-align:right;font-size:9pt;color:var(--muted);line-height:1.55}
-.contact b{color:var(--ink);font-weight:600}
-h2{font:600 8.4pt/1 "Plex",Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:13px 0 6px;display:flex;align-items:center;gap:8px}
+h1{font:900 30pt/1 "Archivo","Arial Narrow",sans-serif;font-stretch:80%;text-transform:uppercase;margin:0}
+.title{font:700 11.5pt/1.2 "Archivo",Arial,sans-serif;color:var(--red);margin-top:5px}
+.contact{text-align:right;font:500 8.4pt/1.6 "JetBrains Mono",monospace;color:var(--muted)}
+.contact b{color:var(--ink);font-weight:500}
+h2{font:500 7.8pt/1 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--red);margin:11px 0 5px;display:flex;align-items:center;gap:8px}
 h2::after{content:"";flex:1;height:1px;background:var(--line)}
 p{margin:0}
 .job{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-top:8px}
-.job b{font:700 10.6pt/1.25 "Schibsted",Arial,sans-serif}
-.job span{font-size:9pt;color:var(--muted);white-space:nowrap}
-.org{color:var(--muted);font-size:9.2pt;margin-top:1px}
+.job b{font:800 10.8pt/1.25 "Archivo",Arial,sans-serif}
+.job span{font:500 8.4pt/1.4 "JetBrains Mono",monospace;color:var(--muted);white-space:nowrap}
+.org{color:var(--muted);font-size:9pt;margin-top:1px}
 .org i{color:var(--ink)}
 ul{margin:4px 0 0;padding-left:13px;display:grid;gap:3px}
 li{padding-left:2px}
-li::marker{color:var(--accent)}
+li::marker{color:var(--red)}
 li b{font-weight:600}
 .skills{display:grid;grid-template-columns:auto 1fr;gap:3px 12px}
-.skills dt{font-weight:600}
+.skills dt{font:700 9.6pt/1.42 "Archivo",Arial,sans-serif}
 .skills dd{margin:0;color:var(--ink)}
 </style></head><body>
 <header>

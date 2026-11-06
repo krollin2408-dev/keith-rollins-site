@@ -22,7 +22,7 @@ Keith asks for changes in plain English. Do the work end to end, then tell him w
 - **Design:** change `src/assets/site.css`; keep both light and dark themes working and check phone width (~390px).
 - **After any change:** add a line to the log in `PROJECT_HISTORY.md`.
 - Publishing is automatic: a push to `main` updates keithrrollins.com in about two minutes. Review bigger changes in a private preview before pushing, since every push to `main` goes live.
-- PDF builds need Playwright (`pip install playwright && python3 -m playwright install chromium`); fonts for the resume are in `src/resume/fonts/`.
+- PDF builds need Playwright (`pip install playwright && python3 -m playwright install chromium`); fonts for the resume are in `src/resume/fonts/` (Archivo variable, Source Serif 4, JetBrains Mono). The PDF and the site's resume page share the Workshop look; restyle both together.
 
 ## Content rules (set by Keith; do not break these)
 

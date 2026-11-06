@@ -6,6 +6,7 @@ What was built, what was decided and why. Newest entries at the top of the log; 
 
 | Date | What happened |
 |---|---|
+| 2026-11-06 | Resume PDF restyled to match the site's resume page (Workshop design: Archivo name and headings, Source Serif body, JetBrains Mono labels, toolbox red). Fonts in `src/resume/fonts/` swapped accordingly. Still one page; text stays readable by ATS. |
 | 2026-11-06 | Home page headline shortened to "I'm Keith. I make brands sound like people again." (Keith asked to drop "Hi,"). |
 | 2026-11-06 | At-spot campaign results clarified as social media link clicks (resume and site), per Keith's comment. |
 | 2026-11-06 | **Full site launched** on keithrrollins.com (`LIVE = True`). Added a custom 404 page, sitemap.xml and robots.txt; coming-soon page retired. |

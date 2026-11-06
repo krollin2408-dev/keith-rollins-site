@@ -21,7 +21,7 @@ Keith asks for changes in plain English. Do the work end to end, then tell him w
 - **New project:** add a dict to `WORK` in `src/content.py` (or a line to `ALSO`) with Keith's exact role, sources for every number, and the right `group`.
 - **Design:** change `src/assets/site.css`; keep both light and dark themes working and check phone width (~390px).
 - **After any change:** add a line to the log in `PROJECT_HISTORY.md`.
-- Publishing is automatic: a push to `main` updates keithrrollins.com in about two minutes. While `LIVE = False`, review changes in `preview/` (or a private preview) instead; the public domain shows only the coming-soon page.
+- Publishing is automatic: a push to `main` updates keithrrollins.com in about two minutes. Review bigger changes in a private preview before pushing, since every push to `main` goes live.
 - PDF builds need Playwright (`pip install playwright && python3 -m playwright install chromium`); fonts for the resume are in `src/resume/fonts/`.
 
 ## Content rules (set by Keith; do not break these)
@@ -31,7 +31,7 @@ Keith asks for changes in plain English. Do the work end to end, then tell him w
 3. **The site tells Keith's story.** Home: who he is right now, the chapter teaser, the quote, three featured pieces. Show the actual work (images, emails, links) before describing it. Keep the featured set curated (about 9); smaller items go in ALSO. Assume a visitor spends one to two minutes on the home page.
 4. **Positioning:** marketing strategist and communications leader. Resume title: Email & Marketing Communications Lead. Target roles: email and lifecycle marketing leadership, remote or Oklahoma City. Target industries: fitness, finance, supplements, e-commerce.
 5. **APMEX has cleared** naming APMEX, OneGold, Bullion International Group and these projects publicly.
-6. **On hold for fact-checking (since Oct 12, 2026).** `LIVE = False` in `src/content.py`: keithrrollins.com shows a coming-soon page and the full site builds to git-ignored `preview/`. When Keith says to launch, set `LIVE = True`, rebuild, push. No LinkedIn link until Keith says his profile is updated.
+6. **Live since Nov 6, 2026.** `LIVE = True` in `src/content.py`: the full site builds into `docs/` (with 404, sitemap.xml, robots.txt, CNAME). Set `LIVE = False` to put the coming-soon page back. No LinkedIn link until Keith says his profile is updated.
 7. **Keep personal contact details out of this public repo** beyond the email address already on the site. The public resume PDF (`src/files/Keith_Rollins_Resume.pdf`) omits the phone number on purpose to avoid scam calls; the application copy with phone builds to `private/` and is never committed.
 
 ## Known facts (verified)

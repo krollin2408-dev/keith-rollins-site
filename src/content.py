@@ -2,7 +2,7 @@
 # or a public page he wrote. Edit words here; run `python3 src/build.py` to rebuild.
 
 # Set LIVE = True to publish the full site to keithrrollins.com. False shows a coming-soon page.
-LIVE = False
+LIVE = True
 EMAIL = "keithrrollins@gmail.com"
 SITE = "https://keithrrollins.com"
 

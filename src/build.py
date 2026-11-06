@@ -70,7 +70,7 @@ def card(w, r=""):
         top = f'<div class="plate" aria-hidden="true"><b>{e(w["stat"])}</b><span>{e(w["stat_note"])}</span></div>'
     return f'<a class="card" href="{r}work/{w["slug"]}.html">{top}<div class="txt"><span class="label">{e(w["label"])}</span><h3>{e(w["title"])}</h3><p>{e(w["summary"])}</p></div></a>'
 
-if os.path.isdir(OUT) and os.path.abspath(OUT) != os.path.abspath(DOCS):
+if os.path.isdir(OUT):
     shutil.rmtree(OUT)
 os.makedirs(OUT, exist_ok=True)
 
@@ -237,7 +237,19 @@ page("how-i-built-this-site.html", "How I Built This Site | Keith Rollins", "How
 # ---------------- STATIC FILES
 for d in ("assets", "emails", "files", "images"):
     shutil.copytree(os.path.join(HERE, d), os.path.join(OUT, d), dirs_exist_ok=True)
-print("built", len(WORK) + 7, "pages into", os.path.relpath(OUT, ROOT))
+# Not-found page, sitemap and GitHub Pages files for the live site
+page("404.html", "Page Not Found | Keith Rollins", "That page doesn't exist.",
+     '<div class="wrap"><header class="page-head"><span class="label">404</span><h1 class="display h-xl">Wrong bay.</h1>'
+     '<p class="lede">That page doesn\'t exist. Try the <a href="/">home page</a>, <a href="/story.html">my story</a> or <a href="/work.html">the work</a>.</p></header></div>')
+fix404 = open(os.path.join(OUT, "404.html")).read().replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<base href="/">', 1)
+open(os.path.join(OUT, "404.html"), "w").write(fix404)
+urls = ["", "story.html", "work.html", "resume.html", "contact.html", "dungeon-crawler-fitness.html", "how-i-built-this-site.html"] + [f"work/{w['slug']}.html" for w in WORK]
+open(os.path.join(OUT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{SITE}/{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
+if os.path.abspath(OUT) == os.path.abspath(DOCS):
+    open(os.path.join(OUT, "CNAME"), "w").write("keithrrollins.com\n")
+    open(os.path.join(OUT, ".nojekyll"), "w").write("")
+print("built", len(WORK) + 8, "pages into", os.path.relpath(OUT, ROOT))
 
 # ---------------- COMING-SOON PAGE (while LIVE is False)
 if not LIVE and len(sys.argv) == 1:

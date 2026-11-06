@@ -6,6 +6,7 @@ What was built, what was decided and why. Newest entries at the top of the log; 
 
 | Date | What happened |
 |---|---|
+| 2026-11-06 | **Full site launched** on keithrrollins.com (`LIVE = True`). Added a custom 404 page, sitemap.xml and robots.txt; coming-soon page retired. |
 | 2026-11-06 | Role framed as Bullion International Group across its brands (site, story, resume, schema). Downtown 66 expanded to show Keith ran every side of the shop; Janzen Toyota removed everywhere. Resume margins trimmed to stay one page. |
 | 2026-11-06 | **Redesign: "The Workshop."** Keith picked direction A's design with C's words from three mockups, plus the "diagnosing a car" quote. New My Story page (first person, starts with where he is now), Work cut to 9 featured pieces shown work-first plus an "Also on my plate" list, a readable Resume page, headshot and the Coinage ad added. Resume skills regrouped from Keith's skills list. Still behind the coming-soon page. Flagged: the Coinage ad shows 900.375.9006 instead of 800. |
 | 2026-11-05 | HTTPS live. Certificate issued after Keith signed in to GitHub; **Enforce HTTPS** turned on. https://keithrrollins.com loads cleanly (still the coming-soon page). |

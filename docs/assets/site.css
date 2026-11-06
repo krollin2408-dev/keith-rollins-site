@@ -190,3 +190,5 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .hold .wrap{display:grid;gap:20px}
 .hold img{width:180px;aspect-ratio:4/5;object-fit:cover;border:3px solid var(--rule)}
 .resume-sheet .rname{font:900 clamp(30px,4vw,42px)/1 var(--head);font-stretch:80%;text-transform:uppercase;margin:0}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

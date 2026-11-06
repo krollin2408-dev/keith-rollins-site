@@ -78,7 +78,7 @@ os.makedirs(OUT, exist_ok=True)
 chap = "".join(f'<a href="story.html"><span class="label">{d}</span><h3>{t}</h3><p>{e(s)}</p></a>' for d, t, s in CHAPTERS)
 feat = "".join(card(WBY[s]) for s in FEATURED)
 person = json.dumps({"@context": "https://schema.org", "@type": "Person", "name": "Keith Rollins", "jobTitle": "Marketing Communications Lead",
-                     "worksFor": {"@type": "Organization", "name": "APMEX"}, "url": SITE, "image": SITE + "/images/keith-rollins-headshot.jpg",
+                     "worksFor": {"@type": "Organization", "name": "Bullion International Group"}, "url": SITE, "image": SITE + "/images/keith-rollins-headshot.jpg",
                      "address": {"@type": "PostalAddress", "addressLocality": "Edmond", "addressRegion": "OK"},
                      "knowsAbout": ["Email marketing", "Marketing strategy", "Copywriting", "Social media", "Public relations", "SEO"]})
 home = f"""
@@ -113,7 +113,7 @@ home = f"""
 </div>
 """
 page("index.html", "Keith Rollins | Marketing Strategist and Communications Leader",
-     "Keith Rollins went from running an auto repair shop to leading marketing communications at APMEX. His story, and the work.",
+     "Keith Rollins went from running an auto repair shop to leading marketing communications across Bullion International Group's brands. His story, and the work.",
      home, None, f'<script type="application/ld+json">{person}</script>')
 
 # ---------------- STORY
@@ -126,7 +126,7 @@ storypage = f"""
 <div class="btns" style="border-top:3px solid var(--rule);padding-top:32px"><a class="btn solid" href="work.html">See the work</a><a class="btn" href="resume.html">Read my resume</a></div>
 </div>
 """
-page("story.html", "My Story | Keith Rollins", "How Keith Rollins went from managing an auto repair shop to leading marketing communications at APMEX.", storypage, "story.html")
+page("story.html", "My Story | Keith Rollins", "How Keith Rollins went from managing an auto repair shop to leading marketing communications across Bullion International Group's brands.", storypage, "story.html")
 
 # ---------------- WORK
 cards = "".join(card(w) for w in WORK)
@@ -134,7 +134,7 @@ also = "".join(f"<li><b>{e(t)}</b><span>{e(d)}</span></li>" for t, d in ALSO)
 workpage = f"""
 <div class="wrap">
 <header class="page-head"><span class="label">Work</span><h1 class="display h-xl">Stuff I've made.</h1>
-<p class="lede">A hand-picked set, from APMEX and my freelance years. Each page shows the work first, then how it came together.</p></header>
+<p class="lede">A hand-picked set, from Bullion International Group's brands and my freelance years. Each page shows the work first, then how it came together.</p></header>
 <section class="sec"><div class="cards">{cards}</div></section>
 <section class="sec">
 <div class="sec-head"><h2 class="display h-md">Also on my plate</h2></div>
@@ -262,7 +262,7 @@ if not LIVE and len(sys.argv) == 1:
 <img src="/images/keith-rollins-headshot.jpg" alt="Keith Rollins">
 <span class="label">Coming soon</span>
 <h1 class="display h-xl">Hi, I'm Keith.</h1>
-<p class="lede">I lead marketing communications at APMEX. My full site is getting a final check and will be here soon.</p>
+<p class="lede">I lead marketing communications across the brands of Bullion International Group. My full site is getting a final check and will be here soon.</p>
 <div class="btns"><span class="addr">{EMAIL}</span><button class="btn solid" type="button" data-copy="{EMAIL}">Copy email address</button><span class="toast" aria-live="polite"></span></div>
 </div></main>
 <script src="/assets/site.js"></script>

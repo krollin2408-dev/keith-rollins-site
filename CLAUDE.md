@@ -36,11 +36,11 @@ Keith asks for changes in plain English. Do the work end to end, then tell him w
 
 ## Known facts (verified)
 
-- At APMEX since Aug 2023; Marketing Communications Lead, Brand Marketing. Employee of the Quarter Q4 2023.
+- Joined APMEX (flagship brand of Bullion International Group) Aug 2023; Marketing Communications Lead, Brand Marketing, leading channels across multiple B.I.G. brands (APMEX, OneGold and affiliates). Employee of the Quarter Q4 2023. **Frame Keith's role as Bullion International Group across its brands** (Keith's instruction, Nov 2026); individual pieces keep the brand they ran under (e.g. "Print · APMEX").
 - 63 bylined APMEX Knowledge Center articles (learn.apmex.com/author/keith-rollins/); 20 FIXD "Best & Worst Years" guides (2023, freelance).
 - Social he owns: 3 brands; selected and rolled out Sprout Social across 8+ platforms. Stack-value format (his strategy and writing; video team produced): TikTok 420.5K and 239.5K views; Instagram 50.9K, 24.1K, 23.7K.
 - APMEX Is the Spot (Aug 2026, his campaign): ~2/3 of week's link clicks; link clicks +~25%; net follower growth +~33%.
-- Career: shop manager, Downtown 66, Stillwater (2011–2019); parts professional, Janzen Toyota (2019–2020); freelance copywriter and stay-at-home parent (2020–2023).
+- Career: shop manager, Downtown 66, Stillwater (2011–2019), running every side of the shop: sales, customer service, bookkeeping, scheduling, operations, hiring, training and leading a team of 5–8; freelance copywriter and stay-at-home parent (2020–2023). **Do not mention Janzen Toyota** anywhere (Keith's instruction).
 
 ## Open items
 

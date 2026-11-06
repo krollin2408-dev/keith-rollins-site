@@ -9,14 +9,14 @@ SITE = "https://keithrrollins.com"
 HERO = dict(
     label="Right now",
     headline="Hi, I'm Keith. I make brands sound like people again.",
-    lede="Today I lead marketing communications at APMEX, one of the biggest precious metals retailers in the country. Ten years ago I was running a repair shop in Stillwater. Here's how I got from there to here, and what I can build for you.",
+    lede="Today I lead marketing communications across the brands of Bullion International Group, including APMEX, one of the biggest precious metals retailers in the country. Ten years ago I was running a repair shop in Stillwater. Here's how I got from there to here, and what I can build for you.",
 )
 
 # The four chapter teasers on the home page (dates, title, one line).
 CHAPTERS = [
-    ("2011 – 2019", "The shop", "Running a crew and earning trust from customers who expected to be oversold."),
+    ("2011 – 2019", "The shop", "Running every part of a small business: sales, service, the books and the crew."),
     ("2020 – 2023", "Home", "Raising my kids and writing copy that sells, one freelance job at a time."),
-    ("2023 – now", "APMEX", "From articles to leading communications for three brands."),
+    ("2023 – now", "B.I.G.", "From articles to leading communications for a family of brands."),
     ("Next", "Your team", "What I want to build next, with email at the center."),
 ]
 
@@ -26,21 +26,21 @@ QUOTE = ("Diagnosing a car and diagnosing a campaign work the same way.",
 # The full story page. Each section: (label, heading, paragraphs). Plain first person.
 STORY = [
     ("Right now", "A big, mixed job, and I love it", [
-        "I'm the Marketing Communications Lead at APMEX in Oklahoma City, one of the largest online precious metals retailers in the U.S. In a single week I might write a press release, plan a campaign, dig through email numbers, steer social media for three brands, and build a tool with AI that saves my team time every morning.",
+        "I'm the Marketing Communications Lead for Bullion International Group, based in Oklahoma City. B.I.G. is the company behind APMEX, one of the largest online precious metals retailers in the U.S., OneGold and several other brands, and I lead communications channels across them. In a single week I might write a press release, plan a campaign, dig through email numbers, steer social media for several brands, and build a tool with AI that saves my team time every morning.",
         "Precious metals buyers are some of the most skeptical customers there are. They've seen every hype cycle. Writing for them taught me to keep things plain, specific and honest, and to let the facts do the selling.",
         "Of everything I do, email is where I get the most out of the work: one message, one reader, one clear reason to act. That's where I want to spend my next chapter.",
     ]),
     ("Chapter one · 2011 – 2019", "The shop", [
-        "For eight years I managed Downtown 66, an auto repair shop in Stillwater. I hired and trained a crew of five to eight people, kept the books and talked with customers all day. After that I spent a year as a parts professional at Janzen Toyota.",
-        "Most people walked into the shop expecting to get taken. You don't win those people over with a pitch. You win them by explaining the problem in plain words, fixing what's actually broken and standing behind the work. I didn't know it then, but that was my first marketing job.",
+        "For eight years I managed Downtown 66, an auto repair shop in Stillwater. In a small shop, the manager runs all of it, and I did. I sold the work and handled customer service. I kept the books and the schedule. I hired, trained and led a crew of five to eight people. If the shop needed it to stay open, it was my job.",
+        "Most people walked into the shop expecting to get taken. You don't win those people over with a pitch. You win them by explaining the problem in plain words, fixing what's actually broken and standing behind the work. Sales, service, operations and marketing, all in one job. I just didn't call it marketing yet.",
     ]),
     ("Chapter two · 2020 – 2023", "Home", [
         "In 2020 I stepped away to stay home with my kids. It's the most important job I've ever had, and it taught me more than any other. It's where I learned to run my own schedule, my own pipeline and my own deadlines, with nobody checking in.",
         "It's also when I started freelancing as a copywriter: direct response, email, SEO and product copy, much of it for automotive brands. For FIXD I wrote 20 data-heavy guides to the best and worst years of popular cars. A decade of fixing cars, it turns out, makes you pretty good at telling people which ones to buy.",
     ]),
-    ("Chapter three · 2023 – now", "APMEX", [
-        "In August 2023 I joined APMEX, and that winter I was named Employee of the Quarter. The job has kept growing ever since.",
-        "Today I own social strategy for three brands. I chose Sprout Social and rolled it out across the company. I write and distribute our press releases. I run campaigns like APMEX Is the Spot, plan print and billboard buys, write email for programs like the Bullion Card, and report results to leadership every month. I've written 63 articles for the APMEX Knowledge Center along the way.",
+    ("Chapter three · 2023 – now", "Bullion International Group", [
+        "In August 2023 I joined APMEX, the flagship brand of Bullion International Group, and that winter I was named Employee of the Quarter. The job has kept growing ever since, and today it reaches across B.I.G.'s family of brands.",
+        "Today I lead social strategy for multiple B.I.G. brands. I chose Sprout Social and rolled it out across the company. I write and distribute our press releases, and I built the plan to bring the PR program to our sister brands. I run campaigns like APMEX Is the Spot, plan print and billboard buys, write email for programs like the Bullion Card, and report results to leadership every month. I've written 63 articles for the APMEX Knowledge Center along the way.",
         "I've also become the person people come to about AI. I build tools with Claude that my team uses every day, and this website is one of them.",
     ]),
     ("Next", "Your team", [

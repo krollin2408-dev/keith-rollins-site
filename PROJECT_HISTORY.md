@@ -6,6 +6,7 @@ What was built, what was decided and why. Newest entries at the top of the log; 
 
 | Date | What happened |
 |---|---|
+| 2026-11-08 | Keith's comments: home drops the "Right now" label and says "service station and repair shop"; chapters renamed "The Service Station" and "Freelance Writer & Stay at Home Dad" (story and home teaser); story chapter headings resized so long words (COMMUNICATIONS, INTERNATIONAL) no longer overlap the text. |
 | 2026-11-06 | Oxford comma applied everywhere (site, resume, application copy) at Keith's request; now a house rule in CLAUDE.md. |
 | 2026-11-06 | Keith's comment edits: story opens with his title; "Chapter one/two/three" labels dropped (dates kept); Stillwater, Oklahoma; trimmed sentences (facts do the selling, this website, story intro line); Dungeon Crawler Fitness removed from the story; target role now email, SMS and lifecycle marketing (story, contact, CLAUDE.md); resume summary split into two sentences with "I lead…". |
 | 2026-11-06 | Resume PDF restyled to match the site's resume page (Workshop design: Archivo name and headings, Source Serif body, JetBrains Mono labels, toolbox red). Fonts in `src/resume/fonts/` swapped accordingly. Still one page; text stays readable by ATS. |

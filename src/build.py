@@ -75,7 +75,7 @@ if os.path.isdir(OUT):
 os.makedirs(OUT, exist_ok=True)
 
 # ---------------- HOME
-chap = "".join(f'<a href="story.html"><span class="label">{d}</span><h3>{t}</h3><p>{e(s)}</p></a>' for d, t, s in CHAPTERS)
+chap = "".join(f'<a href="story.html"><span class="label">{d}</span><h3>{e(t)}</h3><p>{e(s)}</p></a>' for d, t, s in CHAPTERS)
 feat = "".join(card(WBY[s]) for s in FEATURED)
 person = json.dumps({"@context": "https://schema.org", "@type": "Person", "name": "Keith Rollins", "jobTitle": "Marketing Communications Lead",
                      "worksFor": {"@type": "Organization", "name": "Bullion International Group"}, "url": SITE, "image": SITE + "/images/keith-rollins-headshot.jpg",
@@ -85,7 +85,7 @@ home = f"""
 <div class="wrap">
 <section class="hero">
 <div class="hero-copy">
-<span class="label">{e(HERO['label'])}</span>
+
 <h1 class="display h-xl">{e(HERO['headline'])}</h1>
 <p class="lede">{e(HERO['lede'])}</p>
 <div class="btns"><a class="btn solid" href="story.html">Read my story</a><a class="btn" href="work.html">See the work</a></div>

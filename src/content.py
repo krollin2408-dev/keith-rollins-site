@@ -9,13 +9,13 @@ SITE = "https://keithrrollins.com"
 HERO = dict(
     label="Right now",
     headline="I'm Keith. I make brands sound like people again.",
-    lede="Today I lead marketing communications across the brands of Bullion International Group, including APMEX, one of the biggest precious metals retailers in the country. Ten years ago I was running a repair shop in Stillwater. Here's how I got from there to here, and what I can build for you.",
+    lede="Today I lead marketing communications across the brands of Bullion International Group, including APMEX, one of the biggest precious metals retailers in the country. Ten years ago I was running a service station and repair shop. Here's how I got from there to here, and what I can build for you.",
 )
 
 # The four chapter teasers on the home page (dates, title, one line).
 CHAPTERS = [
-    ("2011 – 2019", "The shop", "Running every part of a small business: sales, service, the books, and the crew."),
-    ("2020 – 2023", "Home", "Raising my kids and writing copy that sells, one freelance job at a time."),
+    ("2011 – 2019", "The Service Station", "Running every part of a small business: sales, service, the books, and the crew."),
+    ("2020 – 2023", "Freelance Writer & Stay at Home Dad", "Raising my kids and writing copy that sells, one freelance job at a time."),
     ("2023 – now", "B.I.G.", "From articles to leading communications for a family of brands."),
     ("Next", "Your team", "What I want to build next, with email at the center."),
 ]
@@ -30,11 +30,11 @@ STORY = [
         "Precious metals buyers are some of the most skeptical customers there are. They've seen every hype cycle. Writing for them taught me to keep things plain, specific, and honest.",
         "Of everything I do, email is where I get the most out of the work: one message, one reader, one clear reason to act. That's where I want to spend my next chapter.",
     ]),
-    ("2011 – 2019", "The shop", [
-        "For eight years I managed Downtown 66, an auto repair shop in Stillwater, Oklahoma. In a small shop, the manager runs all of it, and I did. I sold the work and handled customer service. I kept the books and the schedule. I hired, trained, and led a crew of five to eight people. If the shop needed it to stay open, it was my job.",
+    ("2011 – 2019", "The Service Station", [
+        "For eight years I managed Downtown 66, a service station and repair shop in Stillwater, Oklahoma. In a small shop, the manager runs all of it, and I did. I sold the work and handled customer service. I kept the books and the schedule. I hired, trained, and led a crew of five to eight people. If the shop needed it to stay open, it was my job.",
         "Most people walked into the shop expecting to get taken. You don't win those people over with a pitch. You win them by explaining the problem in plain words, fixing what's actually broken, and standing behind the work. Sales, service, operations, and marketing, all in one job. I just didn't call it marketing yet.",
     ]),
-    ("2020 – 2023", "Home", [
+    ("2020 – 2023", "Freelance Writer & Stay at Home Dad", [
         "In 2020 I stepped away to stay home with my kids. It's the most important job I've ever had, and it taught me more than any other. It's where I learned to run my own schedule, my own pipeline, and my own deadlines, with nobody checking in.",
         "It's also when I started freelancing as a copywriter: direct response, email, SEO, and product copy, much of it for automotive brands. For FIXD I wrote 20 data-heavy guides to the best and worst years of popular cars. A decade of fixing cars, it turns out, makes you pretty good at telling people which ones to buy.",
     ]),
